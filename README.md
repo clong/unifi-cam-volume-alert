@@ -20,7 +20,8 @@ A shell script runs FFMPEG against a recorded slice of video from an RTSP stream
 3. Edit the varibles in `/opt/unifi-cam-volume-alert/unifi_volume_alert.sh`
 4. Move the systemd unit file: `mv /opt/unifi-cam-volume-alert/unifi-cam-volume-alert.service`
 5. (Optional) Move the logrotate file `mv /opt/unifi-cam-volume-alert/unfi-cam-volume-alert.logrotate /etc/logrotate.d/`
-6. `sudo systemctl daemon-reload && systemctl start unfi-cam-volume-alert.service`
-7 (Optional to start at boot) `sudo systemctl enable unifi-cam-volume-alert.service`
+6. (Optional to start at boot) `sudo systemctl enable unifi-cam-volume-alert.service`
+7. Start the service: `sudo systemctl daemon-reload && systemctl start unfi-cam-volume-alert.service`
 
+The log file is located at `/opt/unifi-cam-volume-alert/unifi_volume_alert.log`
 
