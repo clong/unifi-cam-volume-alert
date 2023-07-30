@@ -1,0 +1,6 @@
+/opt/unifi-cam-volume-alert/unifi_volume_alert.log {
+    daily
+    missingok
+    notifempty
+    copytruncate
+}

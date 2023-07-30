@@ -1,0 +1,12 @@
+[Unit]
+Description=Script to monitor an RTSP stream for volume
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/unifi-cam-volume-alert/unifi_volume_alert.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
